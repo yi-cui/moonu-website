@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us - Moonu</title>
+<style>
+html {
+scroll-behavior: smooth;
+}
+</style>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Sora:wght@400;500;600;700&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+</style>
+<script>
+tailwind.config = {
+theme: {
+extend: {
+colors: {
+primary: '#4A52EB',
+secondary: '#8B5CF6'
+},
+borderRadius: {
+'none': '0px',
+'sm': '4px',
+DEFAULT: '8px',
+'md': '12px',
+'lg': '16px',
+'xl': '20px',
+'2xl': '24px',
+'3xl': '32px',
+'full': '9999px',
+'button': '8px'
+}
+}
+}
+}
+</script>
+</head>
+<body class="bg-white font-['Work_Sans']">
+
+<!-- Navigation -->
+<nav class="fixed w-full bg-white/90 backdrop-blur-sm z-50 border-b">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-center h-16">
+<div class="flex items-center">
+<a href="index.html" class="flex items-center">
+<img src="assets/images/logo/logo.png" class="w-8 h-8 mr-2" alt="Moonu Logo">
+<div class="font-['Sora'] text-2xl font-semibold text-primary">Moonu</div>
+</a>
+</div>
+<div class="hidden md:flex items-center space-x-8">
+<a href="index.html#features" class="text-gray-600 hover:text-primary">Features</a>
+<a href="index.html#how-it-works" class="text-gray-600 hover:text-primary">How It Works</a>
+<a href="index.html#benefits" class="text-gray-600 hover:text-primary">Benefits</a>
+<button class="bg-black text-white px-6 py-2 !rounded-button hover:bg-black/90 relative">
+Download App
+<span class="absolute -top-2 -right-2 bg-gray-600 text-white text-xs px-2 py-0.5 !rounded-full">Coming Soon</span>
+</button>
+</div>
+</div>
+</div>
+</nav>
+
+<!-- Hero Section -->
+<section class="pt-32 pb-20">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<h1 class="text-5xl font-bold mb-8 font-['Poppins'] text-center">Our Story</h1>
+<div class="max-w-3xl mx-auto text-center mb-16">
+<p class="text-xl text-gray-600">Building a better night's sleep for the ADHD community, one routine at a time.</p>
+</div>
+</div>
+</section>
+
+<!-- Mission Section -->
+<section class="py-20 bg-gray-50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid md:grid-cols-2 gap-12 items-center">
+<div>
+<h2 class="text-4xl font-semibold mb-8 font-['Poppins']">Our Mission</h2>
+<p class="text-gray-600 text-lg mb-6">At Moonu, we believe that everyone deserves a peaceful night's sleep. Our mission is to empower individuals with ADHD to create and maintain healthy sleep routines that work for their unique needs.</p>
+<p class="text-gray-600 text-lg">Through innovative technology and deep understanding of neurodiversity, we're building tools that adapt to you, not the other way around.</p>
+</div>
+<div class="relative">
+<img src="assets/images/team/mission.jpg" alt="Our Mission" class="rounded-2xl shadow-xl">
+</div>
+</div>
+</div>
+</section>
+
+<!-- Values Section (removed Team Section and placed Values Section directly after Mission) -->
+<section class="py-20 bg-white">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<h2 class="text-4xl font-semibold mb-16 font-['Poppins'] text-center">Our Values</h2>
+<div class="grid md:grid-cols-4 gap-8">
+<div class="text-center">
+<div class="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mb-6 mx-auto">
+<i class="ri-heart-line text-primary ri-2x"></i>
+</div>
+<h3 class="text-xl font-semibold mb-4">Empathy First</h3>
+<p class="text-gray-600">Understanding and supporting our users' unique experiences.</p>
+</div>
+<div class="text-center">
+<div class="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mb-6 mx-auto">
+<i class="ri-lightbulb-line text-primary ri-2x"></i>
+</div>
+<h3 class="text-xl font-semibold mb-4">Innovation</h3>
+<p class="text-gray-600">Constantly improving our solutions through research and feedback.</p>
+</div>
+<div class="text-center">
+<div class="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mb-6 mx-auto">
+<i class="ri-shield-star-line text-primary ri-2x"></i>
+</div>
+<h3 class="text-xl font-semibold mb-4">Trust</h3>
+<p class="text-gray-600">Building reliable tools that users can count on every night.</p>
+</div>
+<div class="text-center">
+<div class="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mb-6 mx-auto">
+<i class="ri-group-line text-primary ri-2x"></i>
+</div>
+<h3 class="text-xl font-semibold mb-4">Community</h3>
+<p class="text-gray-600">Creating a supportive environment for better sleep habits.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-50 py-12">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid md:grid-cols-3 gap-8">
+<div>
+<div class="flex items-center mb-4">
+<img src="assets/images/logo/logo.png" class="w-8 h-8 mr-2" alt="Moonu Logo">
+<div class="font-['Sora'] text-2xl font-semibold text-primary">Moonu</div>
+</div>
+<p class="text-gray-600">Your ADHD-friendly night routine companion.</p>
+</div>
+<div>
+<h4 class="font-semibold mb-4">Company</h4>
+<ul class="space-y-2 text-gray-600">
+<li><a href="about.html" class="hover:text-primary">About Us</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-semibold mb-4">Legal</h4>
+<ul class="space-y-2 text-gray-600">
+<li><a href="privacy.html" class="hover:text-primary">Privacy Policy</a></li>
+<li><a href="terms.html" class="hover:text-primary">Terms of Service</a></li>
+</ul>
+</div>
+</div>
+<div class="border-t mt-12 pt-8 text-center text-gray-600">
+<p>&copy; 2025 Moonu. All rights reserved.</p>
+</div>
+</div>
+</footer>
+
+</body>
+</html>
