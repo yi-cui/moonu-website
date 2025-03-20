@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Routine Tips - Moonu</title>
+<style>
+html {
+scroll-behavior: smooth;
+}
+</style>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Sora:wght@400;500;600;700&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+<script>
+tailwind.config = {
+theme: {
+extend: {
+colors: {
+primary: '#4A52EB',
+secondary: '#8B5CF6'
+},
+borderRadius: {
+'none': '0px',
+'sm': '4px',
+DEFAULT: '8px',
+'md': '12px',
+'lg': '16px',
+'xl': '20px',
+'2xl': '24px',
+'3xl': '32px',
+'full': '9999px',
+'button': '8px'
+}
+}
+}
+}
+</script>
+</head>
+<body class="bg-white font-['Work_Sans']">
+
+<nav class="fixed w-full bg-white/90 backdrop-blur-sm z-50 border-b">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-center h-16">
+<div class="flex items-center">
+<a href="index.html" class="flex items-center">
+<img src="assets/images/logo/logo.png" class="w-8 h-8 mr-2" alt="Moonu Logo">
+<div class="font-['Sora'] text-2xl font-semibold text-primary">Moonu</div>
+</a>
+</div>
+<div class="hidden md:flex items-center space-x-8">
+<a href="index.html#features" class="text-gray-600 hover:text-primary">Features</a>
+<a href="index.html#how-it-works" class="text-gray-600 hover:text-primary">How It Works</a>
+<a href="index.html#benefits" class="text-gray-600 hover:text-primary">Benefits</a>
+<button class="bg-primary text-white px-6 py-2 !rounded-button hover:bg-primary/90 relative">
+Download App
+<span class="absolute -top-2 -right-2 bg-secondary text-white text-xs px-2 py-0.5 !rounded-full">Coming Soon</span>
+</button>
+</div>
+</div>
+</div>
+</nav>
+
+<section class="pt-32 pb-12">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<h1 class="text-4xl font-bold mb-8 font-['Poppins'] text-center">Routine Tips</h1>
+<p class="text-gray-600 text-center mb-16">Common questions about building better sleep habits</p>
+
+<div class="space-y-4 max-w-3xl mx-auto">
+    <div class="border rounded-lg">
+        <button class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors rounded-lg" onclick="toggleAccordion(this)">
+            <h3 class="text-xl font-semibold">How long does it take to build a consistent bedtime routine?</h3>
+            <i class="ri-arrow-down-s-line text-2xl transition-transform"></i>
+        </button>
+        <div class="px-6 pb-4 hidden">
+            <p class="text-gray-600">While the common belief is 21 days, research shows it can vary from 18 to 254 days. With Moonu's adaptive approach, we focus on progress over perfection, helping you build sustainable habits at your own pace.</p>
+        </div>
+    </div>
+
+    <div class="border rounded-lg">
+        <button class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors rounded-lg" onclick="toggleAccordion(this)">
+            <h3 class="text-xl font-semibold">What if I keep getting distracted during my wind-down routine?</h3>
+            <i class="ri-arrow-down-s-line text-2xl transition-transform"></i>
+        </button>
+        <div class="px-6 pb-4 hidden">
+            <p class="text-gray-600">Distractions are normal, especially with ADHD. Moonu helps by breaking down your routine into smaller, manageable steps and providing gentle reminders to help you stay on track without feeling overwhelmed.</p>
+        </div>
+    </div>
+
+    <div class="border rounded-lg">
+        <button class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors rounded-lg" onclick="toggleAccordion(this)">
+            <h3 class="text-xl font-semibold">Should I follow the same routine every night?</h3>
+            <i class="ri-arrow-down-s-line text-2xl transition-transform"></i>
+        </button>
+        <div class="px-6 pb-4 hidden">
+            <p class="text-gray-600">While consistency is helpful, flexibility is key. Moonu allows you to create multiple routine variations for different scenarios (weekdays, weekends, or high-energy days), making it easier to maintain good sleep habits in various situations.</p>
+        </div>
+    </div>
+
+    <div class="border rounded-lg">
+        <button class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors rounded-lg" onclick="toggleAccordion(this)">
+            <h3 class="text-xl font-semibold">How can I avoid the "just 5 more minutes" trap at bedtime?</h3>
+            <i class="ri-arrow-down-s-line text-2xl transition-transform"></i>
+        </button>
+        <div class="px-6 pb-4 hidden">
+            <p class="text-gray-600">The "5 more minutes" cycle is common with ADHD. Moonu helps by providing clear transition signals and breaking down your wind-down process into specific time blocks. We also include built-in buffer time to help you gradually shift from high-energy activities to sleep-ready mode.</p>
+        </div>
+    </div>
+
+    <div class="border rounded-lg">
+        <button class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors rounded-lg" onclick="toggleAccordion(this)">
+            <h3 class="text-xl font-semibold">What if I have trouble remembering to start my bedtime routine?</h3>
+            <i class="ri-arrow-down-s-line text-2xl transition-transform"></i>
+        </button>
+        <div class="px-6 pb-4 hidden">
+            <p class="text-gray-600">Moonu uses smart notifications that adapt to your patterns. Instead of a single reminder, we provide progressive alerts that start well before bedtime, helping you transition naturally. You can also customize notification types - visual, sound, or vibration - to find what works best for you.</p>
+        </div>
+    </div>
+
+</div>
+</div>
+</section>
+
+<script>
+function toggleAccordion(button) {
+    const content = button.nextElementSibling;
+    const icon = button.querySelector('i');
+    
+    content.classList.toggle('hidden');
+    icon.style.transform = content.classList.contains('hidden') ? 'rotate(0deg)' : 'rotate(180deg)';
+}
+</script>
+
+<footer class="bg-gray-50 py-12">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid md:grid-cols-2 gap-8">
+<div>
+<div class="flex items-center mb-4">
+<img src="assets/images/logo/logo.png" class="w-8 h-8 mr-2" alt="Moonu Logo">
+<div class="font-['Sora'] text-2xl font-semibold text-primary">Moonu</div>
+</div>
+<p class="text-gray-600">Your ADHD-friendly night routine companion.</p>
+</div>
+<div class="grid grid-cols-2 gap-8">
+<div>
+<h4 class="font-semibold mb-4">Company</h4>
+<ul class="space-y-2 text-gray-600">
+<li><a href="about.html" class="hover:text-primary">About Us</a></li>
+<li><a href="routine-tips.html" class="hover:text-primary">Routine Tips</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-semibold mb-4">Legal</h4>
+<ul class="space-y-2 text-gray-600">
+<li><a href="privacy.html" class="hover:text-primary">Privacy Policy</a></li>
+<li><a href="terms.html" class="hover:text-primary">Terms of Service</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="border-t mt-12 pt-8 text-center text-gray-600">
+<p>&copy; 2025 Moonu. All rights reserved.</p>
+</div>
+</div>
+</footer>
+
+</body>
+</html>
