@@ -13,7 +13,7 @@ scroll-behavior: smooth;
 <!-- Replace the existing Google Fonts link -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Sora:wght@400;500;600;700&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Poppins:wght@400;500;600;700&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
 <style>
 :where([class^="ri-"])::before { content: "\f3c2"; }
@@ -43,7 +43,7 @@ DEFAULT: '8px',
 }
 </script>
 </head>
-<body class="bg-white font-['Work_Sans']">
+<body class="bg-white font-['DM_Sans']">
 <script>
 document.addEventListener('DOMContentLoaded', function() {
 const navLinks = document.querySelectorAll('nav a[href^="#"]');
@@ -75,268 +75,278 @@ behavior: 'smooth'
 <a href="#features" class="text-gray-600 hover:text-primary">Features</a>
 <a href="#how-it-works" class="text-gray-600 hover:text-primary">How It Works</a>
 <a href="#benefits" class="text-gray-600 hover:text-primary">Benefits</a>
-<button class="bg-primary text-white px-6 py-2 !rounded-button hover:bg-primary/90 relative">
-Download App
-<span class="absolute -top-2 -right-2 bg-secondary text-white text-xs px-2 py-0.5 !rounded-full">Coming Soon</span>
-</button>
 </div>
 </div>
 </div>
 </nav>
 <!-- Hero Section -->
-<section class="relative h-screen flex items-center bg-[#FDB813] overflow-hidden">
-<div class="absolute bottom-0 left-0 w-[400px] h-[400px] opacity-30">
-<img src="assets/images/hero/smile-face.png" alt="" class="w-full h-full object-contain">
-</div>
+<section class="relative h-screen flex items-center bg-cover bg-center bg-no-repeat" style="background-image: url('assets/images/backgrounds/hero-bg.png');">
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative w-full">
 <div class="grid grid-cols-5 gap-12 items-center">
 <div class="col-span-2">
-<h1 class="text-5xl font-bold leading-tight mb-6 font-['Poppins']">Turn bedtime into a soothing ritual - with Moonu</h1>
-<p class="text-lg text-gray-700 mb-8">Moonu helps turn bedtime chaos into calm with gentle reminders, soothing interactions, and a rewarding routine.</p>
+<span class="inline-block bg-primary text-white text-xs px-3 py-1 !rounded-full mb-4">Coming Soon</span>
+<h1 class="text-5xl font-bold leading-tight mb-6 font-['Poppins'] text-black">Turn bedtime into a soothing ritual - with Moonu</h1>
+<p class="text-lg text-gray-800 mb-8">Moonu helps turn bedtime chaos into calm with gentle reminders, soothing interactions, and a rewarding routine.</p>
 <div class="flex space-x-4">
-<div class="relative">
-<button class="bg-primary text-white px-8 py-4 !rounded-button hover:bg-primary/90 flex items-center">
-<i class="ri-apple-fill ri-lg mr-2"></i>
-App Store
-</button>
-<span class="block text-sm text-white mt-2">Coming Soon</span>
+<div class="group relative inline-block">
+<a href="#" class="bg-black text-white px-6 py-3 !rounded-xl hover:bg-black/90 flex items-center">
+<img src="assets/images/features/app-store.png" alt="App Store" class="h-5 mr-3">
+<div class="flex flex-col">
+<span class="text-xs">Download on the</span>
+<span class="text-lg font-medium">App Store</span>
+</div>
+</a>
+<span class="whitespace-nowrap invisible group-hover:visible opacity-0 group-hover:opacity-100 transition-all duration-300 absolute -translate-x-1/2 left-1/2 -translate-y-full top-0 mt-[-8px] px-4 py-1.5 bg-[#1224A1]/90 text-white text-sm rounded-md before:content-[''] before:absolute before:left-1/2 before:-bottom-1 before:-translate-x-1/2 before:border-4 before:border-transparent before:border-t-[#1224A1]/90">Coming Soon</span>
+</div>
+<div class="group relative inline-block">
+<a href="#" class="bg-black text-white px-6 py-3 !rounded-xl hover:bg-black/90 flex items-center">
+<img src="assets/images/features/google-play.png" alt="Google Play" class="h-5 mr-3">
+<div class="flex flex-col">
+<span class="text-xs">Get it on</span>
+<span class="text-lg font-medium">Google Play</span>
+</div>
+</a>
+<span class="whitespace-nowrap invisible group-hover:visible opacity-0 group-hover:opacity-100 transition-all duration-300 absolute -translate-x-1/2 left-1/2 -translate-y-full top-0 mt-[-8px] px-4 py-1.5 bg-[#1224A1]/90 text-white text-sm rounded-md before:content-[''] before:absolute before:left-1/2 before:-bottom-1 before:-translate-x-1/2 before:border-4 before:border-transparent before:border-t-[#1224A1]/90">Coming Soon</span>
 </div>
 </div>
 </div>
 <div class="relative flex justify-center col-span-3">
-<img src="assets/images/features/app-interface.png" alt="App Interface" class="w-[80%] h-auto mx-auto">
+<img src="assets/images/features/app-interface.png" alt="App Interface" class="w-[80%] h-auto mx-auto relative z-10">
 </div>
 </div>
 </div>
 </section>
-<section id="features" class="py-20 bg-gray-50">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-<p class="text-sm text-primary text-center mb-4 uppercase tracking-wider">Sleep Challenges</p>
-<h2 class="text-4xl font-semibold text-center mb-4 font-['Poppins']">Why sleep is harder with ADHD</h2>
-<p class="text-gray-600 text-center mb-16 max-w-3xl mx-auto">Many people with ADHD face unique challenges when it comes to bedtime and sleep quality. Moonu addresses these specific pain points to help you rest better.</p>
-
-<div class="grid md:grid-cols-2 gap-8">
-    <div class="bg-white p-8 rounded-2xl">
-        <div class="flex items-center gap-4 mb-4">
-            <div class="w-12 h-12 bg-red-100 rounded-xl flex items-center justify-center shrink-0">
-                <i class="ri-mind-map text-red-500 ri-xl"></i>
+<div class="mt-32 mb-32">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Left Feature Card - Column 1 -->
+            <div class="bg-[#0A0F2C] text-white p-8 rounded-2xl h-full flex flex-col">
+                <h2 class="text-3xl font-semibold mb-6 font-['Poppins']">Why Sticking to a Bedtime Routine Is Harder with ADHD</h2>
+                <div class="flex-grow relative mt-4">
+                    <img src="assets/images/problem/adhd-person.png" alt="Person with ADHD" class="absolute inset-0 w-full h-full object-contain rounded-xl">
+                </div>
             </div>
-            <h3 class="text-xl font-semibold">Racing Thoughts</h3>
-        </div>
-        <p class="text-gray-600">When it's time to sleep, your mind suddenly becomes hyperactive, racing with thoughts, ideas, and worries that make it impossible to relax and drift off to sleep.</p>
-    </div>
 
-    <div class="bg-white p-8 rounded-2xl">
-        <div class="flex items-center gap-4 mb-4">
-            <div class="w-12 h-12 bg-yellow-100 rounded-xl flex items-center justify-center shrink-0">
-                <i class="ri-time-line text-yellow-500 ri-xl"></i>
+            <!-- Column 2 - Split into 2 sections -->
+            <div class="grid grid-rows-2 gap-8 h-full">
+                <!-- Top Section -->
+                <div class="bg-[#1224A1] text-white p-8 rounded-2xl flex flex-col">
+                    <h3 class="text-xl font-semibold mb-4">Inconsistent Routines</h3>
+                    <p class="text-gray-100">Routines often fall apart—especially when they feel boring or easy to forget. Without structure, steps get skipped.</p>
+                    <div class="mt-auto">
+                        <!-- <div class="mt-6">
+                            <img src="assets/images/features/inconsistent.png" alt="Inconsistent Routines Illustration" class="w-24 h-24 mx-auto">
+                        </div> -->
+                    </div>
+                </div>
+                <!-- Bottom Section -->
+                <div class="bg-[#FFF5EB] p-8 rounded-2xl flex flex-col">
+                    <h3 class="text-xl font-semibold mb-4 text-[#1224A1]">Off-Schedule Body Clock</h3>
+                    <p class="text-[#1224A1]">ADHD often comes with a delayed sense of timing. Typical bedtime hours might not feel natural, and without external reminders, tasks tend to get pushed later and later.</p>
+                </div>
             </div>
-            <h3 class="text-xl font-semibold">Delayed Sleep Phase</h3>
-        </div>
-        <p class="text-gray-600">Your internal clock is offset from typical sleep patterns, making it difficult to fall asleep at a conventional bedtime and nearly impossible to wake up feeling refreshed.</p>
-    </div>
 
-    <div class="bg-white p-8 rounded-2xl">
-        <div class="flex items-center gap-4 mb-4">
-            <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center shrink-0">
-                <i class="ri-loop-left-line text-blue-500 ri-xl"></i>
+            <!-- Column 3 - Split into 2 sections -->
+            <div class="grid grid-rows-2 gap-8 h-full">
+                <!-- Top Section -->
+                <div class="bg-[#FFF5EB] p-8 rounded-2xl flex flex-col">
+                    <h3 class="text-xl font-semibold mb-4 text-[#1224A1]">Revenge Bedtime Procrastination</h3>
+                    <p class="text-[#1224A1]">Nighttime feels like the only free time. That freedom leads to putting off bedtime tasks—even when rest is needed.</p>
+                </div>
+                <!-- Bottom Section -->
+                <div class="bg-[#1224A1] text-white p-8 rounded-2xl flex flex-col">
+                    <h3 class="text-xl font-semibold mb-4">Mental Overdrive at Night</h3>
+                    <p class="text-gray-100">As the day winds down, the ADHD brain can become more active—filled with thoughts, ideas, and distractions. This heightened mental activity makes it difficult to focus on simple nighttime tasks.</p>
+                </div>
             </div>
-            <h3 class="text-xl font-semibold">Inconsistent Routines</h3>
-        </div>
-        <p class="text-gray-600">Establishing and sticking to a bedtime routine feels nearly impossible. The struggle to maintain consistency means your body never develops healthy sleep cues.</p>
-    </div>
-
-    <div class="bg-white p-8 rounded-2xl">
-        <div class="flex items-center gap-4 mb-4">
-            <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center shrink-0">
-                <i class="ri-moon-line text-green-500 ri-xl"></i>
-            </div>
-            <h3 class="text-xl font-semibold">Revenge Bedtime Procrastination</h3>
-        </div>
-        <p class="text-gray-600">After a day of forcing focus, you finally feel free at night, leading you to delay sleep to enjoy that freedom—even though you know you'll regret it tomorrow.</p>
-    </div>
-</div>
-
-<div class="mt-16 text-center">
-    <p class="text-xl font-semibold mb-4">Sound familiar?</p>
-    <p class="text-gray-600 mb-8">Moonu is specifically designed to address these ADHD sleep challenges with features tailored to your unique needs.</p>
-    <div class="flex justify-center">
-        <div class="relative">
-            <button class="bg-primary text-white px-8 py-4 !rounded-button hover:bg-primary/90 flex items-center">
-                <i class="ri-apple-fill ri-lg mr-2"></i>
-                Download on App Store
-            </button>
-            <span class="block text-sm text-gray-500 mt-2">Coming Soon</span>
         </div>
     </div>
 </div>
 </div>
 </section>
 <!-- How It Works Section -->
-<section id="how-it-works" class="py-20">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-<h2 class="text-4xl font-bold text-center mb-16">How It Works</h2>
-<div class="space-y-48"> <!-- Increased spacing between steps -->
-    <!-- Step 1 -->
-    <div class="grid md:grid-cols-2 gap-12 items-center min-h-[400px]"> <!-- Added min-height -->
-        <div>
-            <div class="relative mb-6">
-                <div class="w-20 h-20 bg-primary/10 rounded-2xl flex items-center justify-center">
-                    <div class="w-16 h-16 bg-primary rounded-xl flex items-center justify-center">
-                        <span class="text-2xl font-bold text-white">01</span>
+<section id="how-it-works" class="py-32 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <span class="text-gray-600 uppercase tracking-wider text-sm">WHAT WE OFFER</span>
+            <h2 class="text-4xl font-bold mt-4 mb-8 font-['Poppins']">Simply better, all around</h2>
+            
+            <!-- Tab Navigation -->
+            <div class="flex justify-center items-center space-x-12 mb-16">
+                <button class="tab-btn active flex flex-col items-center group" onclick="switchTab('onboarding')">
+                    <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-3 group-hover:bg-primary/20 transition-all">
+                        <i class="ri-user-smile-line text-primary text-2xl"></i>
+                    </div>
+                    <span class="text-gray-900 font-medium">Onboarding</span>
+                </button>
+                <button class="tab-btn flex flex-col items-center group" onclick="switchTab('focus')">
+                    <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-3 group-hover:bg-primary/20 transition-all">
+                        <i class="ri-focus-2-line text-primary text-2xl"></i>
+                    </div>
+                    <span class="text-gray-900 font-medium">Focus Mode</span>
+                </button>
+                <button class="tab-btn flex flex-col items-center group" onclick="switchTab('devices')">
+                    <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-3 group-hover:bg-primary/20 transition-all">
+                        <i class="ri-device-line text-primary text-2xl"></i>
+                    </div>
+                    <span class="text-gray-900 font-medium">Multiple Devices</span>
+                </button>
+            </div>
+
+            <!-- Tab Content -->
+            <div class="tab-content">
+                <!-- Onboarding Tab -->
+                <div id="onboarding" class="tab-pane active">
+                    <div class="grid md:grid-cols-1 gap-12 items-center">
+                        <div class="text-left">
+                            <h3 class="text-3xl font-semibold mb-6">Skip the stress, start with a smart routine</h3>
+                            <p class="text-gray-600 mb-8">Start easy with our guided approach to create a draft routine and complete the setup in a few clicks.</p>
+                            <div class="flex justify-center">
+                                <img src="assets/images/features/onboarding.png" alt="Set Goals Interface" class="rounded-xl transition-all w-full ">
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <h3 class="text-2xl font-semibold mb-4">Skip the stress, start with a smart routine</h3>
-            <div class="space-y-4 text-gray-600">
-                
-                <p>• Start easy with our guided approach to create a draft routine and complete the setup in a few clicks.</p>
-            </div>
-        </div>
-        <div class="grid grid-cols-3 gap-4 relative h-[400px]"> <!-- Fixed height container -->
-            <div class="relative w-full max-w-[160px]"> <!-- Container with max-width -->
-                <img src="assets/images/features/sleep-goals-1.png" alt="Set Goals Interface" 
-                    class="rounded-xl shadow-lg w-full h-auto object-cover absolute top-0">
-            </div>
-            <div class="relative w-full max-w-[160px]">
-                <img src="assets/images/features/sleep-goals-2.png" alt="Set Goals Settings" 
-                    class="rounded-xl shadow-lg w-full h-auto object-cover absolute top-20">
-            </div>
-            <div class="relative w-full max-w-[160px]">
-                <img src="assets/images/features/sleep-goals-3.png" alt="Set Goals Progress" 
-                    class="rounded-xl shadow-lg w-full h-auto object-cover absolute top-0">
+
+                <!-- Focus Mode Tab -->
+                <div id="focus" class="tab-pane hidden">
+                    <div class="grid md:grid-cols-1 gap-12 items-center">
+                        <div class="text-left">
+                            <h3 class="text-3xl font-semibold mb-6">Focus on the ongoing task with flexibility</h3>
+                            <p class="text-gray-600 mb-8">Start with one, then personalize bedtime routines for every kind of night. Our focus mode helps you stay on track with gentle reminders.</p>
+                            <img src="assets/images/features/focus.png" alt="Focus Interface" class="rounded-xl transition-all">
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Multiple Devices Tab -->
+                <div id="devices" class="tab-pane hidden">
+                    <div class="grid md:grid-cols-1 gap-12 items-center">
+                        <div class="text-left">
+                            <h3 class="text-3xl font-semibold mb-6">Track Progress Across All Your Devices</h3>
+                            <p class="text-gray-600 mb-8">Keep your routine synchronized across all your devices. Track progress, get insights, and stay motivated no matter which device you're using.</p>
+                            <div class="flex justify-center">
+                                <img src="assets/images/features/devices.png" alt="Multiple Devices Interface" class="rounded-xl transition-all w-full ">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
-    <!-- Step 2 -->
-    <div class="grid md:grid-cols-2 gap-12 items-center min-h-[400px]">
-        <div class="order-2 md:order-1 relative h-[400px] flex items-center justify-center">
-            <img src="assets/images/features/focus.png" alt="Focus Interface" 
-                class="rounded-xl shadow-lg w-full h-auto max-w-[320px] object-cover">
-        </div>
-        <div class="order-1 md:order-2">
-            <div class="relative mb-6">
-                <div class="w-20 h-20 bg-primary/10 rounded-2xl flex items-center justify-center">
-                    <div class="w-16 h-16 bg-primary rounded-xl flex items-center justify-center">
-                        <span class="text-2xl font-bold text-white">02</span>
-                    </div>
-                </div>
-            </div>
-            <h3 class="text-2xl font-semibold mb-4">Focus on the ongoing task with flexibility.</h3>
-            <div class="space-y-4 text-gray-600">
-                <p>• Start with one, then personalize bedtime routines for every kind of night.</p>
-            </div>
-        </div>
-    </div>
-    <!-- Step 3 - Same pattern as Step 1 -->
-    <div class="grid md:grid-cols-2 gap-12 items-center min-h-[400px]">
-        <div>
-            <div class="relative mb-6">
-                <div class="w-20 h-20 bg-primary/10 rounded-2xl flex items-center justify-center">
-                    <div class="w-16 h-16 bg-primary rounded-xl flex items-center justify-center">
-                        <span class="text-2xl font-bold text-white">03</span>
-                    </div>
-                </div>
-            </div>
-            <h3 class="text-2xl font-semibold mb-4">Track Progress with Rewards</h3>
-            <div class="space-y-4 text-gray-600">
-                <p>• Visual insights into your sleep patterns and routine consistency over time</p>
-                <p>• Track your progress with rewards</p>
-                <p>• Generate tips on improving your routine by tracking </p>
-            </div>
-        </div>
-        <div class="grid grid-cols-3 gap-4 relative h-[400px]"> <!-- Fixed height container -->
-            <div class="relative w-full max-w-[160px]"> <!-- Container with max-width -->
-                <img src="assets/images/features/progress-1.png" alt="Set Goals Interface" 
-                    class="rounded-xl shadow-lg w-full h-auto object-cover absolute top-0">
-            </div>
-            <div class="relative w-full max-w-[160px]">
-                <img src="assets/images/features/progress-2.png" alt="Set Goals Settings" 
-                    class="rounded-xl shadow-lg w-full h-auto object-cover absolute top-20">
-            </div>
+    <script>
+        function switchTab(tabId) {
+            // Hide all tab panes
+            document.querySelectorAll('.tab-pane').forEach(pane => {
+                pane.classList.add('hidden');
+                pane.classList.remove('active');
+            });
             
+            // Remove active class from all tab buttons
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            
+            // Show selected tab pane
+            const selectedPane = document.getElementById(tabId);
+            selectedPane.classList.remove('hidden');
+            selectedPane.classList.add('active');
+            
+            // Add active class to clicked button
+            event.currentTarget.classList.add('active');
+        }
+    </script>
+
+    <style>
+        .tab-btn.active {
+            position: relative;
+        }
+        .tab-btn.active::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 24px;
+            height: 2px;
+            background-color: #4A52EB;
+            border-radius: 2px;
+        }
+    </style>
+</section>
+<!-- Benefits Section -->
+<section id="benefits" class="py-20 bg-white">
+    
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center">
+            <span class="text-primary uppercase tracking-wider text-sm">TESTIMONIALS</span>
+            <h2 class="text-5xl font-bold mt-4 mb-4 font-['Poppins']">Our clients speaks for us</h2>
+        </div>
+
+        <div class="flex flex-col items-center max-w-4xl mx-auto">
+            <!-- Progress Bars -->
+            <div class="w-full max-w-2xl mt-10 mb-20">
+                <h3 class="text-xl font-semibold mb-6 text-center">Our Impact</h3>
+                <div class="space-y-6">
+                    <div>
+                        <div class="flex justify-between mb-2">
+                            <span class="font-medium">Routine Consistency</span>
+                            <span class="text-primary">82%</span>
+                        </div>
+                        <div class="h-2 bg-gray-100 rounded-full">
+                            <div class="h-2 bg-primary rounded-full" style="width: 82%"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between mb-2">
+                            <span class="font-medium">Reduced Bedtime Anxiety</span>
+                            <span class="text-primary">78%</span>
+                        </div>
+                        <div class="h-2 bg-gray-100 rounded-full">
+                            <div class="h-2 bg-primary rounded-full" style="width: 78%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonial -->
+            <div class="bg-white border-2 border-gray-100 p-12 rounded-3xl w-full mb-20">
+                <p class="text-xl text-gray-800 mb-8 text-center">Absolutely thrilled with the exceptional results! Thanks to their innovative approach and strong network of brand partners, our business experienced a remarkable surge in leads and growth. Highly recommend their services which we using always with our partners or company.</p>
+                <!-- <div class="flex items-center justify-center">
+                    <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                        <img src="assets/images/testimonials/john.jpg" alt="John" class="w-full h-full object-cover">
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold">John Doe</h4>
+                        <p class="text-gray-600">CEO</p>
+                    </div>
+                </div>
+            </div> -->
         </div>
     </div>
-</div>
-</div>
 </section>
-<section id="benefits" class="py-20 bg-gray-50">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-<h2 class="text-4xl font-semibold text-center mb-4 font-['Poppins']">Real Results for ADHD Minds</h2>
-<p class="text-gray-600 text-center mb-16">Based on feedback from our beta testing users</p>
-<div class="grid md:grid-cols-2 gap-12 items-center">
-<div>
-<div class="mb-8">
-<p class="text-gray-600 italic text-lg mb-6">"Moonu has completely transformed my evenings. I finally have a consistent bedtime routine that I actually stick to!"</p>
-<div class="flex items-center">
-<div class="w-10 h-10 rounded-full overflow-hidden mr-3">
-<img src="assets/images/testimonials/sarah.jpg" alt="Sarah" class="w-full h-full object-cover">
-</div>
-<div>
-<h4 class="text-sm font-medium">Sarah Mitchell</h4>
-<p class="text-sm text-gray-500">Software Developer</p>
-</div>
-</div>
-</div>
-<div>
-<p class="text-gray-600 italic text-lg mb-6">"The visual reminders and progress tracking keep me motivated. My sleep time has improved dramatically."</p>
-<div class="flex items-center">
-<div class="w-10 h-10 rounded-full overflow-hidden mr-3">
-<img src="assets/images/testimonials/michael.jpg" alt="Michael" class="w-full h-full object-cover">
-</div>
-<div>
-<h4 class="text-sm font-medium">Michael Chen</h4>
-<p class="text-sm text-gray-500">Graphic Designer</p>
-</div>
-</div>
-</div>
-</div>
-<div class="bg-white p-8 rounded-2xl shadow-lg">
-<h3 class="text-2xl font-semibold mb-6">Our Impact</h3>
-<div class="space-y-6">
-<div>
-<div class="flex justify-between mb-2">
-<span class="font-medium">Routine Consistency</span>
-<span class="text-primary">82%</span>
-</div>
-<div class="h-2 bg-gray-200 rounded-full">
-<div class="h-2 bg-primary rounded-full" style="width: 82%"></div>
-</div>
-</div>
-<div>
-<div class="flex justify-between mb-2">
-<span class="font-medium">Reduced Bedtime Anxiety</span>
-<span class="text-primary">78%</span>
-</div>
-<div class="h-2 bg-gray-200 rounded-full">
-<div class="h-2 bg-primary rounded-full" style="width: 78%"></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="py-20 ">
+<!-- <section class="py-20 ">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
     <h2 class="text-4xl font-semibold mb-8 font-['Poppins']">Start Your Better Sleep Journey Today</h2>
     <p class="text-xl text-gray-600 mb-12">Download Moonu now and get 14 days free trial</p>
     <div class="flex justify-center space-x-4">
-    <div class="relative">
+    <div class="group relative inline-block">
     <button class="bg-primary text-white px-8 py-4 !rounded-button hover:bg-primary/90 flex items-center">
     <i class="ri-apple-fill ri-lg mr-2"></i>
     Download on App Store
     </button>
-    <span class="block text-sm text-gray-500 mt-2">Coming Soon</span>
+    <span class="whitespace-nowrap invisible group-hover:visible opacity-0 group-hover:opacity-100 transition-all duration-300 absolute -translate-x-1/2 left-1/2 -translate-y-full top-0 mt-[-8px] px-4 py-1.5 bg-[#1224A1]/90 text-white text-sm rounded-md before:content-[''] before:absolute before:left-1/2 before:-bottom-1 before:-translate-x-1/2 before:border-4 before:border-transparent before:border-t-[#1224A1]/90">Coming Soon</span>
     </div>
     </div>
     </div>
-    </section>
+    </section> -->
 
 
 
 <footer class="bg-gray-50 py-12">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto px-4 mt-20 sm:px-6 lg:px-8">
     <div class="grid md:grid-cols-2 gap-8">
         <div>
         <div class="flex items-center mb-4">
